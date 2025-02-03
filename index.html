@@ -24,5 +24,32 @@
     <div>
         <a href="https://www.youtube.com/watch?v=xkzDaKwinA8">JS 14 tips & tricks</a>
     </div>
+    <div>
+        <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Functions#anonymous_functions_and_arrow_functions">Anonymous functions</a>
+    </div>
+
+    <script>
+        let add7 = (a) => a + 7;
+        console.log("Result of adding 7 to 3 equals " + add7(3));
+
+        function multiply(a,b) {
+            return a * b;
+        }
+        console.log("Multiplication of 2 and 3 equals " + multiply(2,3));
+        
+        function capitalize(string) {
+            return String(string).charAt(0).toUpperCase() + String(string).slice(1);
+        }
+        let str = "hello, baby.";
+        console.log(str);
+        console.log(capitalize(str));
+        let txt = "How are you?";
+        console.log(txt);
+        console.log(capitalize(txt));
+
+        let lastLetter = (string) => String(string).slice(String(string).length - 1);
+        let example = "Dario"
+        console.log(lastLetter(example));
+    </script>
 </body>
 </html>
